@@ -91,6 +91,12 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+ .img-fluid {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -599,7 +605,10 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  width: 400px;
+  height: 300px;
+  object-fit: fill;
 }
 
 .img-thumbnail {
@@ -11590,6 +11599,7 @@ html {
 .profile .profile-img {
   height: 80vw;
   max-height: 45rem;
+  max-width: 40rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -11731,4 +11741,54 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+.Negrão{
+  font-weight: bolder;
+  color: black!important;
+  font-size: 1.5em;
+}
+
+.projetos{
+  color: inherit;
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+.row-contact {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  align-content: center;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row-contact > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+  flex-direction: column; 
+  align-content: center;
 }
